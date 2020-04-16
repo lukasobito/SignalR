@@ -1,0 +1,22 @@
+﻿
+.XoRow {
+    border-style: solid;
+    max-width: 200px;
+    min-height: 60px
+}
+.XoRowMiddle {
+    max-width: 200px;
+    min-height: 54px;
+    border-left: solid;
+    border-right: solid;
+}
+.MiddleCase {
+    border-left: solid;
+    border-right: solid;
+}
+.pointer{
+    cursor:pointer;
+}
+.XoCase {
+    text-align: center;
+}

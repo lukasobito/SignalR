@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="container">
+    <div class="XoTable">
+        <div class="row XoRow">
+            <div class="col-sm pointer XoCase" id="1">
+                1
+            </div>
+            <div class="col-sm pointer XoCase MiddleCase" id="2">
+                2
+            </div>
+            <div class="col-sm pointer XoCase" id="3">
+                3
+            </div>
+        </div>
+        <div class="row XoRowMiddle">
+            <div class="col-sm pointer XoCase" id="4">
+                4
+            </div>
+            <div class="col-sm pointer XoCase MiddleCase" id="5">
+                5
+            </div>
+            <div class="col-sm pointer XoCase" id="6">
+                6
+            </div>
+        </div>
+        <div class="row XoRow">
+            <div class="col-sm pointer XoCase" id="7">
+                7
+            </div>
+            <div class="col-sm pointer XoCase MiddleCase" id="8">
+                8
+            </div>
+            <div class="col-sm pointer XoCase" id="9">
+                9
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/XoScript.js" asp-append-version="true"></script>
