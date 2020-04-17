@@ -36,6 +36,20 @@ connection.on("ReceivePlayer", function (p) {
     if (!player.isOk) {
         player.sign = p;
         player.isOk = true;
+        if (player.sign == "O") {
+            document.getElementsByClassName("XoCase").classList.remove("pointer");
+        }
     }
     console.log("player = " + player.sign);
+});
+
+connection.on("ReceiveCase", function (user, c) {
+    document.getElementById(c).innerHTML = user;
+    document.getElementById(c).removeEventListener('click', test);
+    document.getElementById(c).classList.remove("pointer");
+
 })
+
+function verify() {
+    
+}

@@ -22,11 +22,11 @@ namespace SignalR.Hubs
                 Player.Player2 = true;
                 msg = "O";
             }
-            await Clients.All.SendAsync("ReceivePlayer", msg);
+            await Clients.Caller.SendAsync("ReceivePlayer", msg);
         }
         public async Task SendCase(string player, string c) //c = case
         {
-            await Clients.All.SendAsync("ReceiveCase", player ,c);
+            await Clients.All.SendAsync("ReceiveCase", player, c);
         }
     }
 }
